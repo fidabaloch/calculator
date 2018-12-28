@@ -10,9 +10,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPersonName"
-            android:text="0"
             android:ems="10"
-            android:id="@+id/editText" android:gravity="bottom|right" android:paddingTop="10dp"
+            android:id="@+id/etDisplay" android:gravity="bottom|right" android:paddingTop="10dp"
             android:textSize="50sp" android:background="@color/colorDarkGreyScreen"
             android:textColor="@color/colorWhite" android:paddingRight="5dp" android:layout_weight="3.5"/>
     <TableLayout
@@ -31,8 +30,8 @@
                     android:layout_weight="1"
                     android:text="+/-"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button5"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btnPlusMinus"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
@@ -55,22 +54,22 @@
                     android:layout_weight="1"
                     android:text="7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button10"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn7"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button9"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn8"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="9"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button8"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn9"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
@@ -86,22 +85,22 @@
                     android:layout_weight="1"
                     android:text="4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button12"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn4"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button14"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn5"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button13"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn6"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
@@ -117,22 +116,22 @@
                     android:layout_weight="1"
                     android:text="1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button18"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn1"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button17"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn2"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
                     android:text="3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button16"
-                    android:background="@color/colorGreyBtn"/>
+                    android:layout_height="match_parent" android:id="@+id/btn3"
+                    android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
             <Button
                     android:textSize="24sp"
                     android:layout_weight="1"
@@ -152,17 +151,16 @@
 
                 android:text="0"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/button21" android:layout_weight="1"
-                android:background="@color/colorGreyBtn"/>
+                android:layout_height="match_parent" android:id="@+id/btn0" android:layout_weight="1"
+                android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
         <Button
                 android:textSize="24sp"
                 android:text="."
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/button20" android:layout_weight="1.5"
-                android:background="@color/colorGreyBtn"/>
+                android:layout_height="match_parent" android:id="@+id/btnDot" android:layout_weight="1.5"
+                android:background="@color/colorGreyBtn" android:onClick="NumClickEvent"/>
         <Button
                 android:textSize="24sp"
-
                 android:text="="
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:id="@+id/button19" android:layout_weight="1.5"
